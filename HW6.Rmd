@@ -1,0 +1,41 @@
+---
+title: 'HW6: TEAM  [my team number/name here]'
+author: '[my team members here]'
+date: "Due March 27; Late Acceptance until March 28"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+Part I.  Refer to the simulated data from HW5.  (Suggest that teams work together on this in lab Monday together)
+
+1.  Obtain the posterior distribution using the g-prior with $g=n$ for the training data.  If you do not enumerate and use MCMC, please include diagnostic plots to indicate that the MCMC has run long enough. _Hint:  use `cache=T` in the chunk to save the output so that you do not need to enumerate of rerun the MCMC everytime you update other chunks of code._
+
+2. Compute the average RMSE for a) estimating $\beta_{true}$, b) estimating $\mu_{true} = X_{\text{test}} \beta_{true}$ and c) out of sample prediction of $Y_{test}$ using BMA, the highest posterior probability model, (HPM) and the median probability model (MPM).  Add the RMSE's to the table from HW5 and comment.
+
+3. Provide plots that show confidence/prediction intervals for $\beta$, and $\mu$, and $Y$ in the test data under BMA, HPM, and MPM, with the true data added. Provide a summary table that summarizes what percent  of the intervals contain the true values and add to your results from HW5.
+
+(optional:  repeat steps 1-3 above with the Zellner-Siow Cauchy prior (`prior='JZS'`) or the `prior='hyper-g-n'`. ) 
+
+
+4. Summarize your findings comparing model averaging and selection with the methods from before and any recommendations.
+
+
+5. Refer to the `Boston` housing data in the MASS library
+```{r}
+library(MASS)
+data(Boston)
+```
+
+Using Bayesian regression, predict per capita crime (transforming any variables if needed based on any EDA).   Provide a write up of your analysis describing the data, your model, which priors you used (and why), and interpretation of estimates for at least 5 important variables, paying careful attention to provide interval estimates or posterior distributions in addition to  point testimates.  
+
+
+
+
+
+
+
+    
+    
+
+   
+
